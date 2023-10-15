@@ -1,0 +1,228 @@
+/* Reset some default styles for the list */
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: blue;
+}
+
+/* Style the navigation bar */
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff; /* White background */
+
+    display: flex;
+    padding-left: 15px;
+    padding-top: 26px;
+    padding-bottom:8px;
+    z-index: 100;
+    font-family: "Engula Heavy", sans-serif;
+}
+
+.nav a {
+    text-decoration: none;
+    position: relative; /* Needed for positioning the line */
+    font-size: 14px; /* Increase font size to make the text bigger 19*/
+letter-spacing: 4px;
+ /* Adjust the margin for spacing */
+}
+
+
+.nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px; /* The height of the line */
+    background-color: #000; /* Black color for the line */
+    
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Initially invisible */
+    transform-origin: bottom;
+    transition: transform 0.3s ease, background-color 1s; /* Add a 1-second delay for the line to disappear */
+}
+
+.nav a {
+    color: blue; /* Text color */
+    padding: 14px; /* Increase padding to make the links bigger */
+    border-right: 1px solid #000;
+    
+}
+
+.nav a:hover::before {
+    transform: scaleX(1.02); /* Make the line visible on hover */
+    transition: transform 0.3s ease, background-color 1s; /* Add a 1-second delay for the line to disappear */
+}
+
+/* Style navigation links on hover */
+.nav a:hover {
+    background-color: white; /* Background color on hover */
+    color: red; /* Text color on hover */
+    text-decoration: none;
+}
+.nav {
+    width: 69.9%; /* Set the width to 100% for full width */
+    /* Add any other styles you want for the navbar */
+    
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keep the background fixed */
+}
+
+
+#comLogo {
+    position: fixed;; /* Set the position to absolute */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+ 
+    z-index: 100;
+   width:29%
+}
+
+/*table css*/
+table {
+    width: 100%;
+    border-spacing: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+td {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+td img {
+    max-width: 100%;
+    transition: filter 0.5s; /* Add a smooth transition effect */
+}
+
+td img:hover {
+    filter: brightness(1.3); /* Increase brightness to create a glowing effect */
+}
+
+
+
+
+/*footer*/
+footer {
+    position: relative; /* Set the position to relative */
+    /* You may want to add background-color to the footer to see the placement */
+}
+
+#arrows {
+    position: absolute; /* Set the position to absolute */
+    bottom: -900px; /* Align it to the bottom */
+    right: 0; /* Align it to the right */
+    background-repeat: no-repeat;
+}
+
+/*about page css*/
+.divAboutImg{
+    position:absolute;
+    padding-top:20px;
+width:100%;
+  
+}
+/* table css */
+#MAM{
+    color:blue;
+   
+}
+#WAW{
+    color:red;
+}
+#OHP{
+    color:grey;
+}
+#table1{
+    
+    margin-top:730px;
+    
+}
+#table1 td h1 {
+    margin-bottom: 0; /* Remove margin-bottom for h1 */
+    font-size: 30px;
+  }
+ #table1 td h3 {
+    margin-top: -20px; /* Remove margin-bottom for h1 */
+    font-size: 25px;
+  }
+  
+  #table1 td h2 {
+    margin-top: 0; /* Remove margin-top for h2 */
+  }
+
+  #MOB{
+    color:blue;
+  }
+  #CARE{
+    color:red;
+  }
+  #table1 p {
+    margin-top: -20px; /* Adjust the value as needed */
+  }
+  /* About footer */
+#footerid{
+    background-color: rgb(59, 59, 214);
+    padding: 27px;
+    color: white;
+    text-align: center;
+    position: absolute; /* Set the position to absolute */
+    bottom: -1800px; /* Position it at the bottom */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Stretch the width to 100% of the viewport */
+}
+.nav2 a {
+    color: red; /* Set the text color of the links to white */
+    transition: color 0.3s;
+}
+.nav2 a:hover {
+    color: white; /* Change the text color to white on hover */
+}
+h4{
+    color:red;
+    font-size: 25px;
+}
+
+ #footerpic img {
+    width: 400px; 
+    height: auto;
+    float: right;
+    margin-right: 90px;
+    margin-top: 50px; 
+} 
+h5 {
+    font-size: 18px;
+}
+#footerbottom tr {
+    margin: 0; /* Remove margin between table rows */
+}
+
+#footerbottom td {
+    padding: 10px; /* Add padding within table cells as needed */
+}
+
+#location-table {
+    margin-left: -190px; /* Adjust the left margin as needed */
+}
+
+#location-table2 {
+    margin-left: -600px;
+    width:100%; /* Adjust the margin-left value as needed */
+    margin-top: -50px; 
+}
+#location-table2 img {
+    max-width: 20px; /* Set the maximum width for the images (adjust as needed) */
+    max-height: 20px; /* Set the maximum height for the images (adjust as needed) */
+}
